@@ -27,3 +27,9 @@ The following modules will be covered in this workshop:
 * [Vector Tiles](vectortile/README.md) - Create beautiful maps with vector tiles.
 * [Raster Operations](raster/README.md) - Manipulating pixels with a raster source.
 * [Deploying](deploying/README.md) - Building applications for production.
+
+## Note:
+
+### Stylig of the popup
+    
+* For nice styling of the popup, we can go to http://www.cssarrowplease.com/ and design a container forour popup.
