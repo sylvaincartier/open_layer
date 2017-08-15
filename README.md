@@ -1,29 +1,29 @@
-# Workshop OpenLayers
+# OpenLayers Workshop
 
-Bienvenue au **Workshop OpenLayers**. Ce workshop est conçu pour vous donner une vue d'ensemble d'OpenLayers en tant que solution de cartographie en ligne.
+Welcome to the **OpenLayers Workshop**. This workshop is designed to give you a comprehensive overview of OpenLayers as a web mapping solution.
 
-## Configuration
+## Setup
 
-Ces instructions assument que vous avez récupéré l'archive `openlayers-workshop-fr.zip` depuis la [dernière version du workshop](https://github.com/openlayers/workshop/releases).  En plus, vous devez avoir [Node](https://nodejs.org/) installé pour lancer une serveur de développement pour la bibliothèque OpenLayers.
+These instructions assume that you are starting with an `openlayers-workshop-en.zip` archive from the latest [workshop release](https://github.com/openlayers/workshop/releases).  In addition, you'll need [Node](https://nodejs.org/) v6 or higher installed to run a development server for the workshop.
 
-Après extraction du fichier zip, allez dans le répertoire `openlayers-workshop-fr` et installez quelques dépendances additionnelles:
+After extracting the zip, change into the `openlayers-workshop-en` directory and install some additional dependencies:
 
     npm install
 
-Maintenant, vous êtes prêts à démarrer le serveur pour le workshop.  Il sert la documentation du workshop en plus de fournir un chargeur pour le debug pour la bibliothèque OpenLayers.
+Now you're ready to start the workshop development server.  This serves up the [workshop documentation]({{book.workshopUrl}}/doc/) in addition to providing a module bundler for the OpenLayers library.
 
     npm start
 
-Cela va démarrer un serveur de développement où vous pourrez lire la documentation du workshop et avancez sur les exercices: {{ book.workshopUrl }}.
+This will start a development server where you can read the workshop documentation and work through the exercises.  You should be able to confirm that things are working by seeing an alert pop up at {{book.workshopUrl}}/.  You can read through the workshop documentation at {{book.workshopUrl}}/doc/.
 
-## Vue d'ensemble
+## Overview
 
-Ce workshop est présenté comme un jeu de modules.  Dans chacun de ces modules, vous devrez effectuer un ensemble de tâche conçues pour assimiler un but spécifique à ce module.  Chaque module enchaîne les leçons vues dans les modules précédents et est conçu pour vous faire monter en compétence par étapes.
+This workshop is presented as a set of modules.  In each module you will perform tasks designed to achieve a specific goal for that module.  Each module builds upon lessons learned in previous modules and is designed to iteratively build up your knowledge base.
 
-Les modules suivants seront couverts par ce workshop:
+The following modules will be covered in this workshop:
 
-* [Les basiques](basics/README.md) - Apprendre comment ajouter une carte dans une page web avec OpenLayers.
-* [Les couches et les sources](layers/README.md) - Apprendre à propos des couches et sources.
-* [Les `Controls` et les `Interactions`](controls/README.md) - Apprendre comment utiliser les `controls` et les `interactions` au sens Openlayers.
-* [Les sujets liés aux vecteurs](vector/README.md) - Explorer les couches vecteur en profondeur.
-* [Les `build` personnalisés](custom-builds/README.md) - Créer des `build` personnalisés d'OpenLayers.
+* [Basics](basics/README.md) - Learn how to add a map to a webpage.
+* [Vector Data](vector/README.md) - Working with vector data.
+* [Vector Tiles](vectortile/README.md) - Create beautiful maps with vector tiles.
+* [Raster Operations](raster/README.md) - Manipulating pixels with a raster source.
+* [Deploying](deploying/README.md) - Building applications for production.
