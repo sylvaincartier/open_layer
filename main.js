@@ -7,21 +7,27 @@ import View from 'ol/view';
 
 import sync from 'ol-hashed';
 
+import DragDrop from 'ol/interaction/draganddrop';
+
+const source = new VectorSource();
+
 const map = new Map({
     target: 'map-container',
-    layers: [
-        new VectorLayer({
-            source: new VectorSource({
-                format: new GeoJSON(),
-                url: './data/countries.json'
-            })
-        })
-    ],
     view: new View({
         center: [0, 0],
         zoom: 2
     })
 });
+
+const layer = new VectorLayer({
+    source: source
+});
+map.addLayer(layer);
+
+map.addInteraction(new DragDrop({
+    source: source,
+    formatConstructors: [GeoJSON]
+}))
 
 //the map stayed where we left it in a reload.
 sync(map);
