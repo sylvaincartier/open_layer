@@ -9,6 +9,8 @@ import sync from 'ol-hashed';
 
 import DragDrop from 'ol/interaction/draganddrop';
 
+import Modify from 'ol/interaction/modify';
+
 const source = new VectorSource();
 
 const map = new Map({
@@ -27,6 +29,10 @@ map.addLayer(layer);
 map.addInteraction(new DragDrop({
     source: source,
     formatConstructors: [GeoJSON]
+}))
+
+map.addInteraction(new Modify({
+    source: source
 }))
 
 //the map stayed where we left it in a reload.
