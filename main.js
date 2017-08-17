@@ -11,6 +11,8 @@ import DragDrop from 'ol/interaction/draganddrop';
 
 import Modify from 'ol/interaction/modify';
 
+import Draw from 'ol/interaction/draw';
+
 const source = new VectorSource();
 
 const map = new Map({
@@ -32,6 +34,11 @@ map.addInteraction(new DragDrop({
 }))
 
 map.addInteraction(new Modify({
+    source: source
+}))
+
+map.addInteraction(new Draw({
+    type: 'Polygon',
     source: source
 }))
 
